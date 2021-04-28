@@ -4,8 +4,8 @@ def VernamCipherFunction(text, key):
       for char in text:
             result = result + chr(ord(char) ^ ord(key[ptr]));
             ptr += 1;
-            
       return result
+                      
                       
 encryption_key = '';
 
@@ -26,11 +26,13 @@ while True:
         print('%s = %s'% ( encryption_key, encryption_key_binary ) )
         print('%s %s' % ( ' '*(len(encryption_key) + 2) ,'⎻'*len(encryption_key_binary)) )
         # XOR OPERATION
+
         print('%s %s' % ( ' '*(len(encryption_key) + 2) ,result_binary ) )
         print('\nENCRYPTED TEXT: '+encryption)
         print('NOTE: SOME OF THE ENCRYPTED TEXT ARE NOT CONVERTABLE TO NORMAL CHARACTER SO THE OUTPUT WILL BE BLANK')
         decryption = VernamCipherFunction(encryption, encryption_key);
         print("\nDecrypted Vernam Cipher Text:\t" + decryption+"\n");
+
         #DECRYPTION
         print('%s %s' % ( ' '*(len(encryption_key) + 2) ,result_binary ) )
         print('%s = %s'% ( encryption_key, encryption_key_binary ) )
@@ -40,5 +42,3 @@ while True:
       else:
           print('\nENCRYPTION KEY MUST BE EQUAL OR MORE THAN THE LENGTH OF PLAINTEXT')
 
-# chr(97) => 'a'
-# ord('a') => 97
