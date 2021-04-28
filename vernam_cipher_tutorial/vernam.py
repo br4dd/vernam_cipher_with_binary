@@ -6,7 +6,7 @@ def VernamCipherFunction(text, key):
             ptr += 1;
       return result
                       
-                      
+
 encryption_key = '';
 
 while True:
