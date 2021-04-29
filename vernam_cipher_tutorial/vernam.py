@@ -40,5 +40,5 @@ while True:
         print('%s %s= %s'% ( plaintext, ' '*(len(encryption_key)-len(plaintext)) , plaintext_binary ) )
 
       else:
-          print('\nENCRYPTION KEY MUST BE EQUAL OR MORE THAN THE LENGTH OF PLAINTEXT')
+          print('\nENCRYPTION KEY MUST BE EQUAL OR MORE THAN THE LENGTH OF PLAINTEXT!')
 
